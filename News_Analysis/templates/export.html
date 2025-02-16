@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %}導出新聞資料{% endblock %}
+
+{% block content %}
+<h2>導出新聞資料</h2>
+<p>新聞資料已保存為 CSV 檔案: <a href="/{{ csv_path }}" download>下載</a></p>
+{% endblock %}

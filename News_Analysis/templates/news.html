@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}新聞列表{% endblock %}
+
+{% block content %}
+<h2>新聞列表</h2>
+<ul>
+    {% for article in news %}
+    <li>
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.description }}</p>
+        <p>發布時間: {{ article.publishedAt }}</p>
+        <p>來源: {{ article.source.name }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

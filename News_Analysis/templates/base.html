@@ -1,0 +1,33 @@
+<!-- filepath: /c:/Users/zoe.lin/Desktop/project2025/Analysis/News_Analysis/templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}新聞分析系統{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>新聞分析系統</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">首頁</a></li>
+                <li><a href="{% url 'news' %}">新聞列表</a></li>
+                <li><a href="{% url 'analysis' %}">新聞分析</a></li>
+                <li><a href="{% url 'keywords' %}">關鍵字分析</a></li>
+                <li><a href="{% url 'source_distribution' %}">來源分佈分析</a></li>
+                <li><a href="{% url 'sentiment_analysis' %}">文章情感分析</a></li>
+                <li><a href="{% url 'category_classification' %}">類別分類分析</a></li>
+                <li><a href="{% url 'export' %}">導出資料</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 新聞分析系統</p>
+    </footer>
+</body>
+</html>

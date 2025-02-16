@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}新聞分析{% endblock %}
+
+{% block content %}
+<h2>新聞分析</h2>
+<div class="chart-container">
+    <img src="data:image/png;base64,{{ image }}" alt="新聞發布趨勢圖">
+</div>
+{% endblock %}
