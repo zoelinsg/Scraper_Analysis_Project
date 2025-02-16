@@ -9,8 +9,8 @@
 1. 克隆此專案到本地：
 
     ```sh
-    git clone https://github.com/yourusername/news-analysis-system.git
-    cd news-analysis-system
+    git clone https://github.com/zoelinsg/Scraper_Analysis_Project.git
+    cd News-Analysis
     ```
 
 2. 安裝 Poetry（如果尚未安裝）：
